@@ -3,6 +3,10 @@ $(function(){
         arrows: false,
         vertical: true,
         dots: true,
-        dotsClass: 'header-dots'
+        dotsClass: 'header-dots',
+        autoplay: 2000
     });
+    $(".menu__btn").click(function(){
+        $(".menu__list").slideToggle("slow");
+      });
 });
