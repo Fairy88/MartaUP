@@ -25,12 +25,16 @@ a {
   padding-right: 15px;
 }
 .header__top {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
   height: 100px;
 }
 .menu__list {
+  display: -webkit-box;
   display: flex;
 }
 .menu__list li + li {
@@ -47,6 +51,7 @@ a {
   text-transform: uppercase;
   color: #fff;
   opacity: 0.5;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .menu__list a:hover {
@@ -64,8 +69,10 @@ a {
   padding-top: 111px;
 }
 .header-slider__item-content {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 .header-slider__item-info {
   max-width: 506px;
@@ -135,8 +142,10 @@ a {
   font-weight: 700;
 }
 .specialised__items {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   max-width: 980px;
   margin: 0 auto;
 }
@@ -165,12 +174,16 @@ a {
   background-position: center right;
 }
 .advantages-box {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   padding-bottom: 76px;
 }
 .advantages-box_right {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse;
 }
 .advantages-box__info {
   max-width: 456px;
@@ -217,8 +230,10 @@ a {
 .reviews-items {
   max-width: 940px;
   margin: 0 auto;
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 .reviews__item {
   width: 300px;
@@ -229,6 +244,7 @@ a {
 }
 .reviews__item-head {
   margin-bottom: 13px;
+  display: -webkit-box;
   display: flex;
 }
 .reviews__item-head img {
@@ -257,9 +273,12 @@ a {
   right: 0;
 }
 .footer__inner {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
     height: 61px;
     color: #272727;
     padding: 0 40px;
@@ -325,16 +344,20 @@ margin-left: 20px;
     min-height: auto;
   }
   .reviews-items{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
   }
   .reviews__item{
    margin-top: 25px;
    width: 80%;
   }
   .reviews__item-head{
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 924px){
@@ -351,7 +374,9 @@ margin-left: 20px;
 }
 @media (max-width: 900px){
     .header-slider__item-content{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
     .header-slider__item-info{
         margin: 0 auto;
@@ -368,7 +393,9 @@ margin-left: 20px;
         padding: 30px 0;
     } 
     .advantages-box{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
         padding-bottom: 20px;
     }
     .advantages-box__info{
@@ -383,7 +410,9 @@ margin-left: 20px;
         margin-bottom: 30px;
     }
     .specialised__items{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
     .specialised__item{
         margin: 0 auto 30px;
@@ -394,8 +423,11 @@ margin-left: 20px;
 }
 @media (max-width: 620px){
   .footer__inner{
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
     padding: 40px 0 0 0;
   }
   .footer__link{
@@ -411,7 +443,7 @@ margin-left: 20px;
         text-align: center;
         width: 100%;
         background-color: rgb(26, 90, 174);
-        z-index: 5;/* rgba(255, 255, 255, 0.2); */
+        z-index: 5;
     }
     .menu__list li+li{
         padding-left: 0;
@@ -476,6 +508,7 @@ margin-left: 20px;
 }
 @media (min-width: 570px){
     .menu__list{
+        display: -webkit-box !important;
         display: flex !important;
     }
 }
